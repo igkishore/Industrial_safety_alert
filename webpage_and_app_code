@@ -1,0 +1,52 @@
+<html>
+
+    <head>
+        <style>
+            
+            
+            h1 { text-align:center;}
+            .button {
+  background-color: #7FFF00; 
+  border: none;
+  color: red;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+        
+        </style>
+
+        <title>IoT Platform</title>
+
+        <script type="text/javascript" src="https://cloud.boltiot.com/static/js/boltCommands.js"></script>
+
+        <script>
+
+        setKey('{{ApiKey}}','{{Name}}');
+
+        </script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    </head>
+    
+    <body >
+        <h1 style = font-family:"courier",text-align:"center"> Controlling buzzer Over Internet </h1>
+
+        <center>
+
+        <button class="button" onclick="digitalWrite(0, 'HIGH');">ON</button>
+
+        <button class="button" onclick="digitalWrite(0, 'LOW');">OFF</button>
+
+        </center>
+        <center>
+            <i class="material-icons" style="font-size:60px;color:#00FFFF;">cloud</i>
+        </center>
+        
+
+    </body>
+
+</html>
